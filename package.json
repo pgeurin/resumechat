@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4",
+  "name": "ResumeChat",
+  "version": "0.0.1",
+  "description": "A resume with a chat window, to 'help' your potential employers be aware THAT THERE ARE OTHERS",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

@@ -1,5 +1,8 @@
+/* 
 var express = require('express');
 var app = express();
+//var http = require('http').createServer(app);
+//var io = require('socket.io').listen(http);
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
@@ -28,6 +31,36 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+http.listen(5000, function(){
+  console.log('listening on *:5000');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
+});
+*/
+
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+
+app.get('/', function(req, res){
+  res.sendfile('views/pages/index.html');
+});
+
+io.on('connection', function(socket){
+  console.log('a user connected');
+  socket.on('disconnect', function(){
+    console.log('user disconnected');
+  });
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+  });
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
+});
+
+http.listen(3000, function(){
+  console.log('listening on *:3000');
 });
