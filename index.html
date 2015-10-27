@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+
+  <body>
+    <h1>Philip Geurin </h1>
+    <a href="https://github.com/pgeurin/">See My Github</a></p>(918) 289-8162    Philip.Geurin@gmail.com<br/><p>1715 NW 37th St, Oklahoma City, OK 73118 <br/>
+
+    <h2>Skills</h2>
+    <p> <span class="opening"> Javascript, HTML, CSS, C++, Java,  Python, Matlab, Maple, Prolog, and Scheme Proficiency,<br/></span> <span class="description"> Django-Apache-SQL server stack, Node, Flot, Angular, Express, multiple numerical methods for ordinary and partial differential equations, combinatorial game simulation, evolution simulation for stochastic problem solving, statistical analysis, assembly<br/>
+    <span class="opening"> Linear Algebra, Vector Calculus, Partial Differential Equations, Statistics</span><br/>
+    <span class="opening">Basic Circuitry,</span> capable of designing, building, and troubleshooting electrical circuits</p></span>
+
+    <h2>Related Experience</h2>
+    <p><span class="opening">Backend and Frontend Web Developer, </span><span class="description"> independent, Tulsa/Oklahoma City, 2011 may - present<br/>
+    <a href = "https://asciiconnectfour.com">AsciiConnectFour.com</a>,
+    <a href = "https://poememulator.com"> PoemEmulator.com</a> <br/>
+    <br/></span>
+    <span class="opening">Media Engineer, Claremont BioSolutions, </span> <span class="description"> <br/> Claremont CA, Jan 2011 - August 2011<br/>
+    Constructing a six minute animation for publicity and a grant proposal in August 2011. Enhancing assembly process for handheld, disposable, motorized cell lysing and DNA extraction device. <br/>
+    Project advisor: Claremont BioSolutions CEO Robert Doebler. <br/>
+    <br/></span>
+    <span class="opening">Evolutionary Game Theory Researcher, </span> <span class="description"><br/> Keck Graduate Institute , Claremont CA, June - Sept 2010 <br/>
+    Designed evolutionary models of stock markets using Iterated Prisoners Dilemma in C++ and Matlab. Research Experience Undergraduate (REU) stipend awarded. One in six undergraduate candidates chosen. Project advisors: Arend Hintze and NASA Exceptional Achievement Medal recipient Dr. Chris Adami. <br/>
+    <br/></span>
+    <span class="opening">Medical Physicist Intern, </span><span class="description"> <br/>St. Francis Hospital Radiology Dept., Tulsa OK, May - June 2010 <br/>
+    Independently designed software automating radiation therapy dosage quality assurance. <br/>
+    Project advisor: Clinical Medical Physicist Russ Gerber. <br/>
+    <br/></span>
+    <span class="opening">Electrical Engineer, </span><span class="description"><br/>Beckman Laser Inst. & Harvey Mudd College, Claremont CA, Jan 2009 - May 2009<br/>
+    Developed first generation prototype earpiece for treating tinnitus with infrared lasers. <br/>
+    Project advisor: Professor Patrick Little.<br/>
+    <br/></span>
+    <span class="opening">Tutor, </span><span class="description"><br/>Joint Science Department of Claremont Colleges, Claremont CA, Sept 2008 – 2011<br/>
+    Physics, Game Theory, High School Geometry, Private tutoring for MCAT. <br/>
+    <br/></span>
+    <span class="opening">Researcher, </span><span class="description"> <br/> Joint Science Department of Claremont Colleges, Claremont CA, Summer 2008<br/>
+    Wrote and optimized computer code to shorten week long computer analyses studying a combinatorial game called Chomp.   Project advisor: Professor Adam Landsberg. </p><br/>
+    <br/></span>
+
+    <br/>
+    <h2>Education</h2> 
+    <p>Pitzer College, Claremont, CA  - B.A. Physics, B.A. Media Engineer <br/> GPA 3.55 - Graduation, May 2011<br/>
+    Data Structures, Computational Physics and Engineering,Computational Partial Differential Equations</p><br/>
+    <br/></span>
+    <h2>Awards</h2>
+    <p><span class="opening">Front page entry of /r/funny/, </span><span class="description">Who you gonna call? Goats butter, 2015<br/></span>
+    <span class="opening">REU, </span><span class="description"> National Science Foundation Research grant, 2010 <br/></span>
+    <span class="opening">STEP Student Research Fellowship, </span><span class="description"> National Science Foundation, 2008 </span></p><br/>
+
+
+
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      $('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+      });
+      socket.on('chat message', function(msg){
+        $('#messages').append($('<li>').text(msg));
+      });
+    </script>
+  </body>
+</html>
