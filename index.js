@@ -6,6 +6,10 @@ app.get('/', function(req, res){
   res.sendfile('views/pages/index.html');
 });
 
+app.get('/PhilGeurinHeadshot3RotatedResized2.jpg', function(req, res){
+  res.sendfile('views/pages/PhilGeurinHeadshot3RotatedResized2.jpg');
+});
+
 io.on('connection', function(socket){
   console.log('a user connected');
   socket.on('disconnect', function(){
