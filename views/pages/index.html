@@ -1,118 +1,142 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font: 13px Helvetica, Arial; }
-    form { background: #000; padding: 3px; position: fixed; right: 0%; bottom: 0%; height:7% ; width: 40%; }
-        form input { border: 0; padding: 10px; width: 90%; margin-right: .5; }
-        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-    #messageBox {padding: 3px; position: fixed; right: 0%; bottom: 0; height:90% ; width: 40%; overflow-y: auto;}
-    #messages { padding: 3px; position: fixed; right: 0%; bottom: 0; height:100% ; width: 40%; }
-        #messages { border: 0; padding: 10px; width: 40%; margin-right: .5%; }
-    #messages{list-style-type: none; margin: 0; padding: 0; }
-        #messages ul { overflow-y: auto; }
-        #messages li { padding: 5px 10px; }
-        #messages li:nth-child(odd) { background: #eee; }
-        
-    .jumbotron {
-      background: #FFFFFF;
-      color: black;
-      padding-bottom: 80px; 
-      text-align:left;
-      font-family: garamond}
-      .jumbotron .btn-primary {
-        background: #845ac7;
-        border-color: #845ac7; }
-        .jumbotron .btn-primary:hover {
-          background: #7646c1; }
-      .jumbotron p {
-        color: #000000;
-        max-width: 100%;
-        margin: 0em 0em; }
-      .navbar + .jumbotron {
-        margin-top: -20px; }
-      .jumbotron .lang-logo {
-        display: block;
-        background: #B01302;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        border: 2px solid white; }
-        .jumbotron .lang-logo img {
-          max-width: 100%; }
-    p{line-height:120%;
-        width: 40em;}
-    .opening {margin: 1em
-      color:  #000000;}
-    .description {color:  #808080;}
-    /*
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font: 13px Helvetica, Arial; }
-    form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-    form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-    form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-    #messages { list-style-type: none; margin: 0; padding: 0; }
-    #messages li { padding: 5px 10px; }
-    #messages li:nth-child(odd) { background: #eee; }
-    */
+    <title>Philip Geurin</title>
+    <style type="text/css">
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+    body { 
+        font: 13px Helvetica, Arial; 
+    }
+    h1{
+        font-size: 400%;
+        text-align: center;
+    }
+    .subtitle{
+        text-align: center;
+    }
+    form { 
+        background: #000; 
+        bottom: 0%; 
+        height:10%; 
+        padding: 3px; 
+        position: fixed; 
+        right: 0%; 
+        width: 20%; 
+    }
+        form input { 
+            border: 0; 
+            margin-right: 0; 
+            padding: 10px; 
+            width: 70%; 
+            height:100%; 
+        }
+        form button { 
+            background: rgb(130, 224, 255); 
+            border: none; 
+            padding: 10px; 
+            width: 30%; 
+            height:100%; 
+        }
+    #resume{
+        top: %20;
+        left: 5%;
+        width: 75%;
+    }
+    #messageBox {
+        top: 0; 
+        height:100%; 
+        overflow-y: auto;
+        padding: 3px; 
+        position: fixed; 
+        right: 0%; 
+        width: 20%;
+        background: #66CCFF
+    }
+    #messages { 
+        border: 0; 
+        bottom: 0; 
+        height:100%;
+        list-style-type: none; 
+        margin-right: .5%; 
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        padding: 3px;  
+        right: 0%; 
+        width: 100%; 
+    }
+        #messages ul { 
+            overflow-y: auto; 
+        }
+        #messages li { 
+            padding: 5px 10px; 
+        }
+        #messages li:nth-child(odd) { 
+            background: #eee; 
+        }
   </style>
   </head>
-<body>
   <body>
-    <h1>Philip Geurin </h1>
-    <a href="https://github.com/pgeurin/">See My Github</a></p>(918) 289-8162    Philip.Geurin@gmail.com<br/><p>1715 NW 37th St, Oklahoma City, OK 73118 <br/>
-    <br/>
+    <div id="resume"> 
+        <h1>Philip Geurin</h1>
+        <p class="subtitle"> A website dedicated to bragging </p>
+        <br/>
+        <br/>
+        <br/>
+        <h2>Philip Geurin </h2>
+        <p><a href="https://github.com/pgeurin/">See My Github</a>(918) 289-8162    Philip.Geurin@gmail.com<br/><p>1715 NW 37th St, Oklahoma City, OK 73118 
+        <br/><p>
 
-    <h2>Skills</h2>
-    <p> <span class="opening"> Javascript, HTML, CSS, C++, Java,  Python, Matlab, Maple, Prolog, and Scheme Proficiency,<br/></span> <span class="description"> Django-Apache-SQL server stack, Node, Flot, Angular, Express, multiple numerical methods for ordinary and partial differential equations, combinatorial game simulation, evolution simulation for stochastic problem solving, statistical analysis, assembly<br/>
-    <span class="opening"> Linear Algebra, Vector Calculus, Partial Differential Equations, Statistics</span><br/>
-    <span class="opening">Basic Circuitry,</span> capable of designing, building, and troubleshooting electrical circuits</p></span>
-    <br/>
+        <h3>Skills</h3>
+            <p> <span class="opening"> Javascript, HTML, CSS, C++, Java,  Python, Matlab, Maple, Prolog, and Scheme Proficiency,<br/> </span> <span class="description"> Django-Apache-SQL server stack, Node, Flot, Angular, Express, multiple numerical methods for ordinary and partial differential equations, combinatorial game simulation, evolution simulation for stochastic problem solving, statistical analysis, assembly<br/></span>
+            <span class="opening"> Linear Algebra, Vector Calculus, Partial Differential Equations, Statistics</span><br/>
+            <span class="opening">Basic Circuitry,</span> capable of designing, building, and troubleshooting electrical circuits</p>
+            <br/>
 
-    <h2>Related Experience</h2>
-    <p><span class="opening">Backend and Frontend Web Developer, <br/></span><span class="description"> independent, Tulsa/Oklahoma City, 2011 may - present<br/>
-    <a href = "http://asciiconnectfour.com">AsciiConnectFour.com</a>,
-    <a href = "http://poememulator.com"> PoemEmulator.com</a> <br/>
-    <br/></span>
-    <span class="opening">Media Engineer, Claremont BioSolutions, </span> <span class="description"> <br/> Claremont CA, Jan 2011 - August 2011<br/>
-    Constructing a six minute animation for publicity and a grant proposal in August 2011. Enhancing assembly process for handheld, disposable, motorized cell lysing and DNA extraction device. <br/>
-    Project advisor: Claremont BioSolutions CEO Robert Doebler. <br/>
-    <br/></span>
-    <span class="opening">Evolutionary Game Theory Researcher, </span> <span class="description"><br/> Keck Graduate Institute , Claremont CA, June - Sept 2010 <br/>
-    Designed evolutionary models of stock markets using Iterated Prisoners Dilemma in C++ and Matlab. Research Experience Undergraduate (REU) stipend awarded. One in six undergraduate candidates chosen. Project advisors: Arend Hintze and NASA Exceptional Achievement Medal recipient Dr. Chris Adami. <br/>
-    <br/></span>
-    <span class="opening">Medical Physicist Intern, </span><span class="description"> <br/>St. Francis Hospital Radiology Dept., Tulsa OK, May - June 2010 <br/>
-    Independently designed software automating radiation therapy dosage quality assurance. <br/>
-    Project advisor: Clinical Medical Physicist Russ Gerber. <br/>
-    <br/></span>
-    <span class="opening">Electrical Engineer, </span><span class="description"><br/>Beckman Laser Inst. & Harvey Mudd College, Claremont CA, Jan 2009 - May 2009<br/>
-    Developed first generation prototype earpiece for treating tinnitus with infrared lasers. <br/>
-    Project advisor: Professor Patrick Little.<br/>
-    <br/></span>
-    <span class="opening">Tutor, </span><span class="description"><br/>Joint Science Department of Claremont Colleges, Claremont CA, Sept 2008 – 2011<br/>
-    Physics, Game Theory, High School Geometry, Private tutoring for MCAT. <br/>
-    <br/></span>
-    <span class="opening">Researcher, </span><span class="description"> <br/> Joint Science Department of Claremont Colleges, Claremont CA, Summer 2008<br/>
-    Wrote and optimized computer code to shorten week long computer analyses studying a combinatorial game called Chomp.   Project advisor: Professor Adam Landsberg. </p><br/></span>
+        <h3>Related Experience</h3>
+            <p><span class="opening">Backend and Frontend Web Developer, <br/></span><span class="description"> independent, Tulsa/Oklahoma City, 2011 may - present<br/>
+            <a href = "http://asciiconnectfour.com">AsciiConnectFour.com</a>,
+            <a href = "http://poememulator.com"> PoemEmulator.com</a> <br/>
+            <br/></span>
+            <span class="opening">Media Engineer </span> <span class="description"> <br/> Claremont BioSolutions, Claremont CA, Jan 2011 - August 2011<br/>
+            Constructing a six minute animation for publicity and a grant proposal in August 2011. Enhancing assembly process for handheld, disposable, motorized cell lysing and DNA extraction device. <br/>
+            Project advisor: Claremont BioSolutions CEO Robert Doebler. <br/>
+            <br/></span>
+            <span class="opening">Evolutionary Game Theory Researcher </span> <span class="description"><br/> Keck Graduate Institute , Claremont CA, June - Sept 2010 <br/>
+            Designed evolutionary models of stock markets using Iterated Prisoners Dilemma in C++ and Matlab. Research Experience Undergraduate (REU) stipend awarded. One in six undergraduate candidates chosen. Project advisors: Arend Hintze and NASA Exceptional Achievement Medal recipient Dr. Chris Adami. <br/>
+            <br/></span>
+            <span class="opening">Medical Physicist Intern </span><span class="description"> <br/>St. Francis Hospital Radiology Dept., Tulsa OK, May - June 2010 <br/>
+            Independently designed software automating radiation therapy dosage quality assurance. <br/>
+            Project advisor: Clinical Medical Physicist Russ Gerber. <br/>
+            <br/></span>
+            <span class="opening">Electrical Engineer </span><span class="description"><br/>Beckman Laser Inst. & Harvey Mudd College, Claremont CA, Jan 2009 - May 2009<br/>
+            Developed first generation prototype earpiece for treating tinnitus with infrared lasers. <br/>
+            Project advisor: Professor Patrick Little.<br/>
+            <br/></span>
+            <span class="opening">Tutor </span><span class="description"><br/>Joint Science Department of Claremont Colleges, Claremont CA, Sept 2008 – 2011<br/>
+            Physics, Game Theory, High School Geometry, Private tutoring for MCAT. <br/>
+            <br/></span>
+            <span class="opening">Researcher </span><span class="description"> <br/> Joint Science Department of Claremont Colleges, Claremont CA, Summer 2008<br/>
+            Wrote and optimized computer code to shorten week long computer analyses studying a combinatorial game called Chomp.   Project advisor: Professor Adam Landsberg. <br/></span></p>
+            <br/>
+        <h3>Education</h3> 
+            <p>Pitzer College, <span class="description"> Claremont, CA  - B.A. Physics, B.A. Media Engineer <br/> GPA 3.55 - Graduation, May 2011<br/>
+            Data Structures, Computational Physics and Engineering,Computational Partial Differential Equations<br/></span></p>
 
-    <br/>
-    <h2>Education</h2> 
-    <p>Pitzer College, Claremont, CA  - B.A. Physics, B.A. Media Engineer <br/> GPA 3.55 - Graduation, May 2011<br/>
-    Data Structures, Computational Physics and Engineering,Computational Partial Differential Equations</p><br/></span>
-
-    <h2>Awards</h2>
-    <p><span class="opening">Front page entry of /r/funny/, </span><span class="description">Who you gonna call? Goats butter, 2015<br/></span>
-    <span class="opening">REU, </span><span class="description"> National Science Foundation Research grant, 2010 <br/></span>
-    <span class="opening">STEP Student Research Fellowship, </span><span class="description"> National Science Foundation, 2008 </span></p><br/>
-
-
-    <div id="messageBox">
-    <ul id="messages"></ul>
+            <h3>Awards</h3>
+            <p><span class="opening">Front page entry of /r/funny/, </span><span class="description">Who you gonna call? Goats butter, 2015<br/></span>
+            <span class="opening">REU, </span><span class="description"> National Science Foundation Research grant, 2010 <br/></span>
+            <span class="opening">STEP Student Research Fellowship, </span><span class="description"> National Science Foundation, 2008 </span></p><br/>
     </div>
-    <form action="">
+    <div id="messageBox">
+        <ul id="messages">Talk to anyone else looking at the website here!</ul>
+    </div>
+    <form action="nonemptyRequired">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
