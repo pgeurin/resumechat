@@ -1,0 +1,102 @@
+listening on *:80
+Sun, 01 Nov 2015 21:01:33 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:48:7
+a user connected
+user disconnected
+a user connected
+a user connected
+user disconnected
+user disconnected
+a user connected
+user disconnected
+a user connected
+user disconnected
+a user connected
+user disconnected
+a user connected
+message: testing
+message: keep testing
+message: still working?
+message: overlap
+a user connected
+message: testing
+message: still stesting
+user disconnected
+a user connected
+message: test here
+message: can you hear me?
+message: Yes I can!
+user disconnected
+user disconnected
+a user connected
+a user connected
+a user connected
+user disconnected
+user disconnected
+a user connected
+user disconnected
+a user connected
+user disconnected
+a user connected
+user disconnected
+user disconnected
+a user connected
+a user connected
+a user connected
+a user connected
+a user connected
+a user connected
+a user connected
+a user connected
+a user connected
+user disconnected
+user disconnected
+user disconnected
+user disconnected
+user disconnected
+user disconnected
+user disconnected
+user disconnected
+a user connected
+user disconnected
+a user connected
+user disconnected
+a user connected
+a user connected
+message: Postbtibthebworld
+user disconnected
+module.js:338
+    throw err;
+          ^
+Error: Cannot find module '/root/resumeChatSynthesis/resumechat/server.js'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+module.js:338
+    throw err;
+          ^
+Error: Cannot find module '/root/resumeChatSynthesis/resumechat/server.js'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+module.js:338
+    throw err;
+          ^
+Error: Cannot find module '/root/resumeChatSynthesis/resumechat/server.js'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+module.js:338
+    throw err;
+          ^
+Error: Cannot find module '/root/resumeChatSynthesis/resumechat/server.js'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
