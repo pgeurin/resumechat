@@ -1,0 +1,48 @@
+new resume notes:
+	Ok, looks like the multi-line typing is good. next question: how do i get the text to scroll down? hmmm. put it in it's own div? no idea. 
+
+	next:
+	verify HTML for bugs
+	verify CSS for bugs
+
+PROBLEM:
+	SERVER ISN'T TALKING TO CLOUDATCOST
+
+	blahhhhhh, i can't login to cloudatcost AGAIN!
+	WHATS THE PROBLEM HERE?
+
+	some comibnation of username, and password. Ive done it before...
+
+	GOT IT: It's ssh root@162.219.4.83
+	then type password: Sweet1cloudatcost
+
+	ok, NOW it's working... but how do i get Node to host all the time (even when the terminal closes)
+		1) nohup node index.js &
+		2) screen
+		3) npm install pm2 -g
+		pm2 start index.js
+
+		ok, so that one works so far (will the server go to speep ever? I know that pm2 is designed for this... but i'm not using it? Oh well!)
+
+Verified HTML and CSS
+
+solving: resume is creeping over onto the text side. I need to set it in a div and that in a width. 
+	Yay! Im using divs and it's working CRAZY better.'
+
+NOTE: TO RUN NODE ON UNIVERSAL PORT 80 I MUST USE SUDO!!!
+
+ok, all that is pretty good, now it's just time to upload my picture and be done and apply to stuff!
+
+to run:
+	nohup node server.js &
+to get info:
+	ps -ef | grep "node"
+to kill it: 
+	kill 9500 (where 9500 is whatever PID you got)
+
+Hmm, having some trouble restarting the auto-run node on the cloudatcost server =(
+
+NEXT TRY: INSTALL software to run the server forever!
+	sudo apt-get install upstart - http://stackoverflow.com/questions/5818202/how-to-run-node-js-app-forever-when-console-is-closed
+
+Huh, i got the server running, but i can't get the local one running? Huh, well, oh well! 
