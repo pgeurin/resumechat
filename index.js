@@ -23,6 +23,9 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(80, function(){
-  console.log('listening on *:80');
+//http.listen(80, function(){
+//  console.log('listening on *:80');
+//});
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
