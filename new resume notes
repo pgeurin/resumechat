@@ -46,3 +46,4 @@ NEXT TRY: INSTALL software to run the server forever!
 	sudo apt-get install upstart - http://stackoverflow.com/questions/5818202/how-to-run-node-js-app-forever-when-console-is-closed
 
 Huh, i got the server running, but i can't get the local one running? Huh, well, oh well! 
+
