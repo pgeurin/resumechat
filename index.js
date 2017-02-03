@@ -1,4 +1,4 @@
-
+/*
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -30,9 +30,8 @@ io.on('connection', function(socket){
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
+*/
 
-
-/*
 //Used parts of https://github.com/heroku-examples/node-socket.io/blob/master/server.j-s
 'use strict';
 
@@ -46,7 +45,7 @@ const INDEX = path.join(__dirname, 'views/pages/index.html');
 
 
 const server = express()
-  //.get('/PhilGeurinHeadshot3RotatedResized2.jpg', function(req, res){res.sendfile('views/pages/PhilGeurinHeadshot3RotatedResized2.jpg');})
+  .get('/PhilGeurinHeadshot3RotatedResized2.jpg', function(req, res){res.sendfile('views/pages/PhilGeurinHeadshot3RotatedResized2.jpg');})
   .use((req, res) => res.sendFile(INDEX) )
   //.use((req, res) => res.sendFile(PHOTO) )
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
@@ -65,4 +64,3 @@ io.on('connection', (socket) => {
 });
 
 setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
-*/
