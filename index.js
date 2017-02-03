@@ -45,7 +45,7 @@ const INDEX = path.join(__dirname, 'views/pages/index.html');
 
 
 const server = express()
-  .get('/PhilGeurinHeadshot3RotatedResized2.jpg', function(req, res){res.sendfile('views/pages/PhilGeurinHeadshot3RotatedResized2.jpg');})
+  //.get('/PhilGeurinHeadshot3RotatedResized2.jpg', function(req, res){res.sendfile('views/pages/PhilGeurinHeadshot3RotatedResized2.jpg');})
   .use((req, res) => res.sendFile(INDEX) )
   //.use((req, res) => res.sendFile(PHOTO) )
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
